@@ -11,27 +11,7 @@
     <header class="header">
       <div class="header__container">
         <a href="#hero-part" class="header__logo">
-          <div class="header__video_wrapper">
-            <video
-              src="./src/assets/media/logo-dark-theme.mp4"
-              playsinline
-              preload="auto"
-            >
-              <source
-                type="video/mov"
-                src="./src/assets/media/logo-dark-theme.mov"
-              />
-              <source
-                type="video/webm"
-                src="./src/assets/media/logo-dark-theme.webm"
-              />
-              <source
-                type="video/mp4"
-                src="./src/assets/media/logo-dark-theme.mp4"
-              />
-            </video>
-          </div>
-          <img src="./src/assets/png/cursor.png" alt="Mintlify Logo" />
+          <img src="./src/assets/svg/logo.svg" alt="Mintlify Logo" />
         </a>
 
         <nav class="nav">
@@ -73,7 +53,13 @@
             </a>
           </div>
           <div class="hero__bg__img-container">
-            <img src="./src/assets/webp/hero-background.webp" />
+            <img
+              src="./src/assets/webp/hero-background.webp"
+              class="back-img"
+            />
+            <div class="top-img">
+              <img src="./src/assets/png/hero-bg.png" />
+            </div>
           </div>
         </div>
       </section>
@@ -130,50 +116,55 @@
       </section>
 
       <!-- Section 3: Features -->
-      <section class="features" id="features">
+      <section class="features">
         <div class="feature">
           <div class="feature-content">
-            <h3>Agent</h3>
-            <h2>Agent turns ideas into code</h2>
+            <h3>Agents turn ideas into code</h3>
             <p>
-              A human-AI programmer, orders of magnitude more effective than any
-              developer alone.
+              Accelerate development by handing off tasks to Cursor, while you
+              focus on making decisions.
             </p>
-            <a href="#" class="feature-link">Learn about Agent →</a>
-          </div>
-          <div class="feature-visual">Feature visualization</div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-content">
-            <h3>Tab</h3>
-            <h2>Magically accurate autocomplete</h2>
-            <p>
-              Our custom Tab model predicts your next action with striking speed
-              and precision.
-            </p>
-            <a href="#" class="feature-link">Learn about Tab →</a>
-          </div>
-          <div class="feature-visual">Feature visualization</div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-content">
-            <h3>Ecosystem</h3>
-            <h2>Everywhere software gets built</h2>
-            <p>
-              Cursor is in GitHub reviewing your PRs, a teammate in Slack, and
-              anywhere else you work.
-            </p>
-            <a href="#" class="feature-link"
-              >Learn about Cursor's ecosystem →</a
+            <a href="#" class="external-link"
+              >Learn about agentic development →</a
             >
           </div>
-          <div class="feature-visual">Feature visualization</div>
+          <div class="feature-visual">
+            <img src="./src/assets/png/feature1.png" />
+          </div>
+        </div>
+
+        <div class="feature feature-2">
+          <div class="feature-content">
+            <h3>Magically accurate autocomplete</h3>
+            <p>
+              Our specialized Tab model predicts your next action with striking
+              speed and precision.
+            </p>
+            <a href="#" class="external-link">Learn about Tab →</a>
+          </div>
+          <div class="feature-visual">
+            <img src="./src/assets/png/feature2.png" />
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-content">
+            <h3>In every tool, at every step</h3>
+            <p>
+              Cursor reviews your PRs in GitHub, collaborates in Slack, and runs
+              in your terminal.
+            </p>
+            <a href="#" class="external-link"
+              >Learn about Cursor's surfaces →</a
+            >
+          </div>
+          <div class="feature-visual">
+            <img src="./src/assets/png/feature3.png" />
+          </div>
         </div>
       </section>
 
-      <!-- Testimonials -->
+      <!-- Section 4: Testimonials -->
       <section class="testimonials">
         <h2>The new way to build software.</h2>
         <div class="testimonials__grid">
@@ -311,128 +302,264 @@
         </div>
       </section>
 
-      <!-- Stay on the frontier -->
-      <section class="section">
-        <h2 class="section-title">Stay on the frontier</h2>
-        <div class="cards-grid">
-          <div class="card">
-            <h3>Access the best models</h3>
-            <p>
-              Choose between every cutting-edge model from OpenAI, Anthropic,
-              Gemini, and xAI.
-            </p>
-            <a href="#" class="card-link">Explore models ↗</a>
+      <!-- Section 5: Stay on the frontier -->
+      <section class="frontier">
+        <h2 class="frontier__title">Stay on the frontier</h2>
+        <div class="frontier__grid">
+          <div class="frontier__card">
+            <div class="frontier__card-top">
+              <h3>Use the best model for every task</h3>
+              <p>
+                Choose between every cutting-edge model from OpenAI, Anthropic,
+                Gemini, xAI, and Cursor.
+              </p>
+              <a href="#" class="external-link">Explore models ↗</a>
+            </div>
+            <div class="frontier__card-media">
+              <img src="./src/assets/png/models.png" />
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Complete codebase understanding</h3>
-            <p>
-              Cursor learns how your codebase works, no matter the scale or
-              complexity.
-            </p>
-            <a href="#" class="card-link">Learn about semantic search ↗</a>
+          <div class="frontier__card">
+            <div class="frontier__card-top">
+              <h3>Complete codebase understanding</h3>
+              <p>
+                Cursor learns how your codebase works, no matter the scale or
+                complexity.
+              </p>
+              <a href="#" class="external-link"
+                >Learn about semantic search ↗</a
+              >
+            </div>
+            <div class="frontier__card-media">
+              <img src="./src/assets/png/codebase.png" />
+            </div>
           </div>
 
-          <div class="card">
-            <h3>Develop enduring software</h3>
-            <p>
-              Trusted by over half of the Fortune 500 to accelerate development,
-              securely and at scale.
-            </p>
-            <a href="#" class="card-link">Explore enterprise →</a>
+          <div class="frontier__card">
+            <div class="frontier__card-top">
+              <h3>Develop enduring software</h3>
+              <p>
+                Trusted by over half of the Fortune 500 to accelerate
+                development, securely and at scale.
+              </p>
+              <a href="#" class="external-link">Explore enterprise →</a>
+            </div>
+            <div class="frontier__card-media">
+              <img src="./src/assets/png/software.png" />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Changelog -->
-      <section class="changelog section">
-        <h2 class="section-title">Changelog</h2>
-        <div class="changelog-item">
-          <div class="changelog-header">
-            <span class="changelog-version">2.4</span>
-            <span class="changelog-date">Jan 22, 2026</span>
-          </div>
-          <p class="changelog-desc">Subagents, Skills, and Image Generation</p>
+      <!-- Section 6: Changelog -->
+      <section class="changelog">
+        <h2 class="changelog__title">Changelog</h2>
+        <div class="changelog__list">
+          <a href="#" class="changelog__item">
+            <div class="c-item__top">
+              <span class="c-item__chip">2.4</span>
+              <span class="c-item__date">Jan 22, 2026</span>
+            </div>
+            <p class="c-item__desc">Subagents, Skills, and Image Generation</p>
+          </a>
+          <a href="#" class="changelog__item">
+            <div class="c-item__top">
+              <span class="c-item__date">Jan 16, 2026</span>
+            </div>
+            <p class="c-item__desc">CLI Agent Modes and Cloud Handoff</p>
+          </a>
+          <a href="#" class="changelog__item">
+            <div class="c-item__top">
+              <span class="c-item__date">Jan 8, 2026</span>
+            </div>
+            <p class="c-item__desc">
+              New CLI Features and Improved CLI Performance
+            </p>
+          </a>
+          <a href="#" class="changelog__item">
+            <div class="c-item__top">
+              <span class="c-item__chip">2.3</span>
+              <span class="c-item__date">Dec 22, 2025</span>
+            </div>
+            <p class="c-item__desc">
+              Layout Customization and Stability Improvements
+            </p>
+          </a>
         </div>
-        <div class="changelog-item">
-          <div class="changelog-header">
-            <span class="changelog-date">Jan 16, 2026</span>
+        <a href="#" class="external-link">See what's new in Cursor →</a>
+      </section>
+
+      <!-- Section7: Reasearch Team  -->
+      <section class="research">
+        <div class="research__container">
+          <div class="research__content">
+            <h3>
+              Cursor is an applied research team focused on building the future
+              of software development.
+            </h3>
+            <a href="#" class="external-link">Join us →</a>
           </div>
-          <p class="changelog-desc">CLI Agent Modes and Cloud Handoff</p>
-        </div>
-        <div class="changelog-item">
-          <div class="changelog-header">
-            <span class="changelog-date">Jan 8, 2026</span>
+          <div class="research__visual">
+            <img src="./src/assets/webp/homepage-team-photo.webp" />
           </div>
-          <p class="changelog-desc">
-            New CLI Features and Improved CLI Performance
-          </p>
         </div>
       </section>
 
-      <!-- CTA -->
+      <!-- Section 8 : Recent Highlights -->
+      <section class="highlights">
+        <div class="highlights__container">
+          <div class="highlight__grid">
+            <div class="h-grid__item1"><h2>Recent highlights</h2></div>
+            <div class="h-grid__item2">
+              <article>
+                <a href="#" class="highlight__card">
+                  <div>
+                    <p class="h-title">Towards self-driving codebases</p>
+                    <p class="h-desc">
+                      We're making a part of our multi-agent research harness
+                      available to try today in preview.
+                    </p>
+                  </div>
+                  <div class="h-datetime">
+                    <span>Research . </span>
+                    <time datetime="2026-02-05T12:00:00.000Z">Feb 5, 2026</time>
+                  </div>
+                </a>
+              </article>
+              <article>
+                <a href="#" class="highlight__card">
+                  <div>
+                    <p class="h-title">Best practices for coding with agents</p>
+                    <p class="h-desc">
+                      A comprehensive guide to working with coding agents, from
+                      starting with plans to managing context, customizing
+                      workflows, and reviewing code.
+                    </p>
+                  </div>
+                  <div class="h-datetime">
+                    <span>Product . </span>
+                    <time datetime="2026-02-05T12:00:00.000Z">Feb 5, 2026</time>
+                  </div>
+                </a>
+              </article>
+              <article>
+                <a href="#" class="highlight__card">
+                  <div>
+                    <p class="h-title">
+                      Salesforce ships higher-quality code across 20,000
+                      developers with Cursor
+                    </p>
+                    <p class="h-desc">
+                      Over 90% of developers at Salesforce now use Cursor,
+                      driving double-digit improvements in cycle time, PR
+                      velocity, and code quality.
+                    </p>
+                  </div>
+                  <div class="h-datetime">
+                    <span>Customers . </span>
+                    <time datetime="2026-01-21T12:00:00.000Z"
+                      >Jan 21, 2026</time
+                    >
+                  </div>
+                </a>
+              </article>
+              <a href="#" class="external-link">View more posts →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9: CTA Banner -->
       <section class="cta">
-        <h2>Try Cursor now.</h2>
-        <div class="hero-buttons">
-          <a href="#" class="btn btn-primary">Download for macOS ⤓</a>
-          <a href="#" class="btn btn-text">Try mobile agent →</a>
+        <div class="cta__container">
+          <h2 class="cta__title">Try Cursor now.</h2>
+          <div class="cta__actions">
+            <a
+              class="btn btn--secondary hero__download-btn"
+              href="https://api2.cursor.sh/updates/download/golden/darwin-arm64/cursor/2.4"
+              >Download for macOS
+              <span class="btn-icon">⤓</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-grid">
-          <div class="footer-column">
-            <h4>Product</h4>
-            <ul>
-              <li><a href="#">Features</a></li>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <h4 class="footer__column-header">Product</h4>
+            <ul class="footer__column-list">
+              <li><a href="#">Agents</a></li>
               <li><a href="#">Enterprise</a></li>
-              <li><a href="#">Web Agents</a></li>
-              <li><a href="#">Bugbot</a></li>
+              <li><a href="#">Code Review</a></li>
+              <li><a href="#">Tab</a></li>
               <li><a href="#">CLI</a></li>
+              <li><a href="#">Cloud Agents</a></li>
               <li><a href="#">Pricing</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h4>Resources</h4>
-            <ul>
+            <h4 class="footer__column-header">Resources</h4>
+            <ul class="footer__column-list">
               <li><a href="#">Download</a></li>
               <li><a href="#">Changelog</a></li>
-              <li><a href="#">Docs ↗</a></li>
-              <li><a href="#">Learn ↗</a></li>
-              <li><a href="#">Forum ↗</a></li>
-              <li><a href="#">Status ↗</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Status</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h4>Company</h4>
-            <ul>
+            <h4 class="footer__column-header">Company</h4>
+            <ul class="footer__column-list">
               <li><a href="#">Careers</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Community</a></li>
-              <li><a href="#">Workshops</a></li>
               <li><a href="#">Students</a></li>
               <li><a href="#">Brand</a></li>
+              <li><a href="#">Anysphere</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
-            <h4>Legal</h4>
-            <ul>
+            <h4 class="footer__column-header">Legal</h4>
+            <ul class="footer__column-list">
               <li><a href="#">Terms of Service</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Data Use</a></li>
               <li><a href="#">Security</a></li>
             </ul>
           </div>
+          <div class="footer-column">
+            <h4 class="footer__column-header">Connect</h4>
+            <ul class="footer__column-list">
+              <li><a href="#">X</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer-bottom">
-          <p>© 2026 Cursor • 🛡 SOC 2 Certified</p>
+          <div class="f-bottom__left">
+            <div>
+              © 2026 <a href="https://anysphere.inc">Anysphere, Inc.</a>
+            </div>
+            <div>🛡 <a href="/en-US/security">SOC 2 Certified</a></div>
+          </div>
+          <div class="f-bottom__right">
+            <div class="language-options">
+              <button class="language-btn">
+                <span class="icon-glyph-08">🌐</span>English
+                <img src="./src/assets/svg/down.svg" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
